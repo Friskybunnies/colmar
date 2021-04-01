@@ -1,3 +1,5 @@
+/*-- overall --*/
+
 * {
     font-family: Helvetica, sans-serif;
     background-color: white;
@@ -22,7 +24,7 @@ h3 {
 }
 
 h4 {
-    font-size: 35px;
+    font-size: 2.2em;
     font-weight: lighter;
     color: darkslategray;
 }
@@ -39,6 +41,8 @@ p {
     font-weight: normal;
     color: darkslategray;
 }
+
+/*-- header --*/
 
 header {
     height: 30px;  
@@ -75,6 +79,28 @@ span {
 .nav-item {
     padding-right: 30px;
 }
+
+/*-- header breakpoints --*/
+
+@media only screen and (max-width: 1200px) {
+    .nav-item h4 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-item img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #logo h3 {
+        display: none;
+    }
+}
+
+/*-- banner --*/
 
 .banner {
     clear: both;
@@ -145,6 +171,8 @@ button {
     background-color: rgb(50, 50, 50);
 }
 
+/*-- second slide --*/
+
 .slide-two {
     clear: both;
     height: auto;
@@ -181,6 +209,8 @@ button {
     flex-direction: column;
     margin-left: 60px;
 }
+
+/*-- third slide --*/
 
 .slide-three {
     background-color: lightgray;
@@ -235,6 +265,8 @@ button {
     width: 100%;
 }
 
+/*-- fourth slide --*/
+
 #heading2 {
     text-align: center;
     width: 100%;
@@ -280,6 +312,8 @@ button {
     flex-direction: column;
     padding-left: 50px;
 }
+
+/*-- footer --*/
 
 footer {
     margin-bottom: 100px;
